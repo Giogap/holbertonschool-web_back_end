@@ -49,4 +49,11 @@ Rewrite the function appendToEachArrayValue to use ES6’s for...of operator. An
 
 
 ## 11. Iterator
+
+Write a function named createEmployeesObject that will receive two arguments:
+
+departmentName (String)
+employees (Array of Strings)
+
+
 ## 12. Let's create a report object
