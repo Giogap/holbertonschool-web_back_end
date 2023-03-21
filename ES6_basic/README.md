@@ -20,7 +20,11 @@ function taskNext to instantiate variables using let
 
 Rewrite the getBudgetForCurrentYear function to use ES6 computed property names on the budget object
 
-9. ES6 method properties
+## 9. ES6 method properties
+
+Rewrite getFullBudgetObject to use ES6 method properties in the fullBudget object
+
+
 10. For...of Loops
 11. Iterator
 12. Let's create a report object
