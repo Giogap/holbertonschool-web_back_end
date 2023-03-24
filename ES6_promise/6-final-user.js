@@ -1,7 +1,7 @@
 import signUpUser from './4-user-promise';
 import uploadPhoto from './5-photo-reject';
 
-const handleProfileSignup = async (firstName, lastName, fileName,) => {
+const handleProfileSignup = async (firstName, lastName, fileName) => {
   const result = [];
   try {
     const user = await signUpUser(firstName, lastName);
