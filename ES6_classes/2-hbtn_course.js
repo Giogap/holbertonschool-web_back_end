@@ -26,4 +26,17 @@ export default class HolbertonCourse {
     }
     this._length = value;
   }
+
+  set students(currStudents) {
+    if (typeof currStudents === 'object') {
+      for (const student in currStudents) {
+        if (typeof student !== 'string') {
+          throw new TypeError('Students must be an array of strings');
+        }
+      }
+    } else {
+      throw new TypeError('Students must be an array of strings');
+    }
+    this._students = currStudents;
+  }
 }
