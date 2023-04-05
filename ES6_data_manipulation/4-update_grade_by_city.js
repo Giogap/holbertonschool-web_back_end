@@ -4,17 +4,17 @@ const updateStudentGradeByCity = (students, city, newGrades) => {
   }
 
   const studentByCity = students
-  .filter((student) => student.location === city)
-  .map((student) => {
-    const grades = newGrades.filter((note) => student.id === note.studentId);
-    let grade = 'N/A';
+    .filter((student) => student.location === city)
+    .map((student) => {
+      const grades = newGrades.filter((note) => student.id === note.studentId);
+      let grade = 'N/A';
 
-    if (grades[0]) {
-    grade = grades[0].grade;
-    }
-    return { ...student, grade };      
-  });
-  return studentByCity;
+      if (grades[0]) {
+        grade = grades[0].grade;
+      }
+      return { ...student, grade };      
+    });
+    return studentByCity;
 };
 
 export default updateStudentGradeByCity;
