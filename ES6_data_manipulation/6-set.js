@@ -1,4 +1,3 @@
-export default function setFromArray(ArrayElement) {
-    const dataStructure = new Set(ArrayElement);
-    return (dataStructure);
-  }
+const setFromArray = (array) => new Set(array);
+
+export default setFromArray;
