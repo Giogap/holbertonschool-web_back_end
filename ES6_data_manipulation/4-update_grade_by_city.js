@@ -11,9 +11,9 @@ const studentByCity = students
 
     if (grades[0]) {
       grade = grades[0].grade;
-    }  
+    }
     return { ...student, grade };      
-    });  
+    });
   return studentByCity;
-};  
+};
 export default updateStudentGradeByCity;
