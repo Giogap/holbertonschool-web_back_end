@@ -12,6 +12,7 @@ const updateStudentGradeByCity = (students, city, newGrades) => {
       if (grades[0]) {
         grade = grades[0].grade;
       }
+      
       return { ...student, grade };      
     });
   return studentByCity;
